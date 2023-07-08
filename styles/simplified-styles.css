@@ -150,7 +150,7 @@ main .section:not(.carousel-container):not(.text-block):not(.columns-container):
 }
 
 /* TODO: Block not yet simplified are added as :not exceptions. This list  should shrink as we simplify sections */
-.block:not(.header):not(.cards):not(.press-cards):not(.collapse):not(.carousel):not(.columns):not(.footer):not(.columns-new) {
+.block:not(.header):not(.cards):not(.press-cards):not(.collapse):not(.carousel):not(.columns):not(.footer):not(.columns-new):not(.faq) {
     position: relative;
     width: 100%;
     display: grid;
