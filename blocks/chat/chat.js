@@ -15,7 +15,7 @@ function sendMessage(socket, message) {
   function appendMessageServer(message) {
     var chatBody = document.querySelector('.chat-body');
     var messageElement = document.createElement('div');
-    messageElement.innerHTML = "<span class='server-message'><b>Bot: </b>" + message + "</span>";
+    messageElement.innerHTML = "<span class='server-message'>" + message + "</span>";
     chatBody.appendChild(messageElement);
     chatBody.scrollTop = chatBody.scrollHeight;
   }
@@ -27,7 +27,7 @@ function sendMessage(socket, message) {
   
     var chatBody = document.querySelector('.chat-body');
     var messageElement = document.createElement('div');
-    messageElement.innerHTML = "<span class='client-message'><b>You: </b>" + message + "</span>";
+    messageElement.innerHTML = "<span class='client-message'>" + message + "</span>";
     chatBody.appendChild(messageElement);
     chatBody.scrollTop = chatBody.scrollHeight;
   }
